@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Assegura que tots els elements (header, container, footer) estiguin en columna */
+    min-height: 100vh; /* Alçada mínima de la pàgina igual a la finestra */
+}
+
+header {
+    background-color: #dd500f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    flex: 1; /* Fa que el contingut principal ocupi tot l'espai disponible */
+    display: flex; /* Manté el menú i el contingut principal en horitzontal */
+}
+
+.menu {
+    width: 20%;
+    background-color: #222; /* Color de fons més elegant */
+    color: white;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Afegeix un lleuger ombrejat al menú */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 1rem 0;
+    font-size: 1rem; /* Augmenta lleugerament la mida del text */
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Arrodoneix les cantonades */
+    transition: background-color 0.3s, transform 0.2s; /* Transició suau */
+}
+
+.menu li:hover {
+    background-color: #dd500f; /* Color destacat en passar el ratolí */
+    transform: translateX(5px); /* Lleuger desplaçament cap a la dreta */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Facilita que tot el "li" sigui clicable */
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline; /* Subratlla el text al passar-hi */
+}
+
+
+
+main {
+    width: 80%;
+    padding: 2rem;
+    background-image: url("img/fondo.jpg");
+    /*background-color: white;*/
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    min-height: 100vh; /* Asegura que el contenedor principal tenga al menos la altura de la ventana */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+   
+}
+
+
+
+
+footer {
+    background-color: #363535;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto; /* Fa que el footer es posicioni al final de la pàgina */
+}
+
+footer a {
+    color: #dd500f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
